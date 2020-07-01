@@ -1,0 +1,675 @@
+valid,0
+
+"SPEC CPU2017 Floating Point Rate Result"
+
+"Full Results Table"
+
+Benchmark,"Base # Copies","Est. Base Run Time","Est. Base Rate","Base Selected","Base Status","Peak # Copies","Est. Peak Run Time","Est. Peak Rate","Peak Selected","Peak Status",Description
+503.bwaves_r,1,384.460267,26.08332,1,S,,,,,,"refrate(ref) iteration #1"
+507.cactuBSSN_r,1,211.433868,5.987688,1,S,,,,,,"refrate(ref) iteration #1"
+508.namd_r,1,201.476257,4.715196,1,S,,,,,,"refrate(ref) iteration #1"
+510.parest_r,1,404.721779,6.4637,1,S,,,,,,"refrate(ref) iteration #1"
+511.povray_r,1,357.468532,6.532043,1,S,,,,,,"refrate(ref) iteration #1"
+519.lbm_r,1,203.812253,5.171426,1,S,,,,,,"refrate(ref) iteration #1"
+521.wrf_r,1,343.258659,6.525691,1,S,,,,,,"refrate(ref) iteration #1"
+526.blender_r,1,247.746765,6.147406,1,S,,,,,,"refrate(ref) iteration #1"
+527.cam4_r,1,223.384349,7.829555,1,S,,,,,,"refrate(ref) iteration #1"
+538.imagick_r,1,323.560996,7.686341,1,S,,,,,,"refrate(ref) iteration #1"
+544.nab_r,1,276.966646,6.076544,1,S,,,,,,"refrate(ref) iteration #1"
+549.fotonik3d_r,1,391.34083,9.958072,1,S,,,,,,"refrate(ref) iteration #1"
+554.roms_r,1,215.391017,7.377281,1,S,,,,,,"refrate(ref) iteration #1"
+
+"Selected Results Table"
+
+Benchmark,"Base # Copies","Est. Base Run Time","Est. Base Rate","Base Selected","Base Status","Peak # Copies","Est. Peak Run Time","Est. Peak Rate","Peak Selected","Peak Status",Description
+503.bwaves_r,1,384.460267,26.08332,1,S,,,,,NR,"SelectedIteration (base #1; peak NR)"
+507.cactuBSSN_r,1,211.433868,5.987688,1,S,,,,,NR,"SelectedIteration (base #1; peak NR)"
+508.namd_r,1,201.476257,4.715196,1,S,,,,,NR,"SelectedIteration (base #1; peak NR)"
+510.parest_r,1,404.721779,6.4637,1,S,,,,,NR,"SelectedIteration (base #1; peak NR)"
+511.povray_r,1,357.468532,6.532043,1,S,,,,,NR,"SelectedIteration (base #1; peak NR)"
+519.lbm_r,1,203.812253,5.171426,1,S,,,,,NR,"SelectedIteration (base #1; peak NR)"
+521.wrf_r,1,343.258659,6.525691,1,S,,,,,NR,"SelectedIteration (base #1; peak NR)"
+526.blender_r,1,247.746765,6.147406,1,S,,,,,NR,"SelectedIteration (base #1; peak NR)"
+527.cam4_r,1,223.384349,7.829555,1,S,,,,,NR,"SelectedIteration (base #1; peak NR)"
+538.imagick_r,1,323.560996,7.686341,1,S,,,,,NR,"SelectedIteration (base #1; peak NR)"
+544.nab_r,1,276.966646,6.076544,1,S,,,,,NR,"SelectedIteration (base #1; peak NR)"
+549.fotonik3d_r,1,391.34083,9.958072,1,S,,,,,NR,"SelectedIteration (base #1; peak NR)"
+554.roms_r,1,215.391017,7.377281,1,S,,,,,NR,"SelectedIteration (base #1; peak NR)"
+
+SPECrate2017_fp_base,7.320158,,7.320158
+SPECrate2017_fp_peak,"Not Run",,,,,,,"Not Run"
+
+"Run number:",011.0
+"runcpu command:","/media/pheonix/d630b300-6092-41db-bf6a-dd1bd0f42bca/home/manavjeet/git/OS/Spec_OS/bin/harness/runcpu --configfile Manav2-gcc-linux-x86.cfg --size ref --noreportable --nopower --runmode rate --tune base --size refrate fprate"
+"output root:","not used"
+
+"Hardware Vendor:","ASUS corp."
+"Hardware Model:",--
+"Date tested:",Feb-2020
+"CPU2017 License:",--
+"Test sponsor:","ASUS corp."
+"Tested by:","Manavjeet Singh"
+"Hardware avail:",
+"Software avail:",
+
+
+HARDWARE
+
+"CPU Name","Intel i5-8300H"
+"  Max MHz.",4000
+"  Nominal",2300
+Enabled,"4 cores, 1 chip, 2 threads/core"
+Orderable,--
+"Cache L1"," "
+"  L2"," "
+"  L3"," "
+"  Other"," "
+Memory,"7.701 GB fixme: If using DDR4, the format is:"
+,"'N GB (N x N GB nRxn PC4-nnnnX-X)'"
+Storage,"137 GB  add more disk info here"
+Other,--
+
+SOFTWARE
+
+OS,"Parrot GNU/Linux 4.8"
+,5.4.0-3parrot1-amd64
+Compiler,"C/C++/Fortran: Version 9.2.1 20200123 of GCC, the"
+,"GNU Compiler Collection"
+Parallel,No
+Firmware," "
+"File System",ext4
+"System State","Run level 5 (add definition here)"
+"Base Pointers",64-bit
+"Peak Pointers","Not Applicable"
+Other," "
+
+"General Notes"
+
+"Environment variables set by runcpu before the start of the run:"
+"LD_LIBRARY_PATH = ""/usr/lib64/:/usr/lib/:/lib64"""
+
+
+"Platform Notes"
+
+" Sysinfo program"
+" /media/pheonix/d630b300-6092-41db-bf6a-dd1bd0f42bca/home/manavjeet/git/OS/Spec_OS/bin/sys"
+" info"
+" Rev: r5974 of 2018-05-19 9bcde8f2999c33d61f64985e45859ea9"
+" running on parrot Fri Feb 28 15:55:32 2020"
+
+" SUT (System Under Test) info as seen by some common utilities."
+" For more information on this section, see"
+"    https://www.spec.org/cpu2017/Docs/config.html#sysinfo"
+
+" From /proc/cpuinfo"
+"    model name : Intel(R) Core(TM) i5-8300H CPU @ 2.30GHz"
+"       1  ""physical id""s (chips)"
+"       8 ""processors"""
+"    cores, siblings (Caution: counting these is hw and system dependent. The following"
+"    excerpts from /proc/cpuinfo might not be reliable.  Use with caution.)"
+"       cpu cores : 4"
+"       siblings  : 8"
+"       physical 0: cores 0 1 2 3"
+
+" From lscpu:"
+"      Architecture:                    x86_64"
+"      CPU op-mode(s):                  32-bit, 64-bit"
+"      Byte Order:                      Little Endian"
+"      Address sizes:                   39 bits physical, 48 bits virtual"
+"      CPU(s):                          8"
+"      On-line CPU(s) list:             0-7"
+"      Thread(s) per core:              2"
+"      Core(s) per socket:              4"
+"      Socket(s):                       1"
+"      NUMA node(s):                    1"
+"      Vendor ID:                       GenuineIntel"
+"      CPU family:                      6"
+"      Model:                           158"
+"      Model name:                      Intel(R) Core(TM) i5-8300H CPU @ 2.30GHz"
+"      Stepping:                        10"
+"      CPU MHz:                         3909.937"
+"      CPU max MHz:                     4000.0000"
+"      CPU min MHz:                     800.0000"
+"      BogoMIPS:                        4599.93"
+"      Virtualization:                  VT-x"
+"      L1d cache:                       128 KiB"
+"      L1i cache:                       128 KiB"
+"      L2 cache:                        1 MiB"
+"      L3 cache:                        8 MiB"
+"      NUMA node0 CPU(s):               0-7"
+"      Vulnerability Itlb multihit:     KVM: Mitigation: Split huge pages"
+"      Vulnerability L1tf:              Mitigation; PTE Inversion; VMX conditional cache"
+"      flushes, SMT vulnerable"
+"      Vulnerability Mds:               Mitigation; Clear CPU buffers; SMT vulnerable"
+"      Vulnerability Meltdown:          Mitigation; PTI"
+"      Vulnerability Spec store bypass: Mitigation; Speculative Store Bypass disabled via"
+"      prctl and seccomp"
+"      Vulnerability Spectre v1:        Mitigation; usercopy/swapgs barriers and __user"
+"      pointer sanitization"
+"      Vulnerability Spectre v2:        Mitigation; Full generic retpoline, IBPB"
+"      conditional, IBRS_FW, STIBP conditional, RSB filling"
+"      Vulnerability Tsx async abort:   Not affected"
+"      Flags:                           fpu vme de pse tsc msr pae mce cx8 apic sep mtrr"
+"      pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx"
+"      pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology"
+"      nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3"
+"      sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer"
+"      aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb invpcid_single"
+"      pti ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase"
+"      tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt intel_pt"
+"      xsaveopt xsavec xgetbv1 xsaves dtherm ida arat pln pts hwp hwp_notify hwp_act_window"
+"      hwp_epp md_clear flush_l1d"
+
+" /proc/cpuinfo cache data"
+"    cache size : 8192 KB"
+
+" From numactl --hardware  WARNING: a numactl 'node' might or might not correspond to a"
+" physical chip."
+
+" From /proc/meminfo"
+"    MemTotal:        8074588 kB"
+"    HugePages_Total:       0"
+"    Hugepagesize:       2048 kB"
+
+" /usr/bin/lsb_release -d"
+"    Parrot GNU/Linux 4.8"
+
+" From /etc/*release* /etc/*version*"
+"    debian_version: parrot"
+"    os-release:"
+"       PRETTY_NAME=""Parrot GNU/Linux 4.8"""
+"       NAME=""Parrot GNU/Linux"""
+"       ID=parrot"
+"       ID_LIKE=debian"
+"       VERSION=""4.8"""
+"       VERSION_ID=""4.8"""
+"       HOME_URL=""https://www.parrotlinux.org/"""
+"       SUPPORT_URL=""https://community.parrotlinux.org/"""
+
+" uname -a:"
+"    Linux parrot 5.4.0-3parrot1-amd64 #1 SMP Parrot 5.4.13-3parrot2 (2020-02-01) x86_64"
+"    GNU/Linux"
+
+" Kernel self-reported vulnerability status:"
+
+" CVE-2017-5754 (Meltdown):          Mitigation: PTI"
+" CVE-2017-5753 (Spectre variant 1): Mitigation: usercopy/swapgs barriers and __user"
+" pointer sanitization"
+" CVE-2017-5715 (Spectre variant 2): Mitigation: Full generic retpoline, IBPB: conditional,"
+" IBRS_FW, STIBP: conditional, RSB filling"
+
+" run-level 5 Feb 28 10:48"
+
+" SPEC is set to:"
+" /media/pheonix/d630b300-6092-41db-bf6a-dd1bd0f42bca/home/manavjeet/git/OS/Spec_OS"
+"    Filesystem     Type  Size  Used Avail Use% Mounted on"
+"    /dev/sda4      ext4  137G   96G   35G  74%"
+"    /media/pheonix/d630b300-6092-41db-bf6a-dd1bd0f42bca"
+
+" Additional information from dmidecode follows.  WARNING: Use caution when you interpret"
+" this section. The 'dmidecode' program reads system data which is ""intended to allow"
+" hardware to be accurately determined"", but the intent may not be met, as there are"
+" frequent changes to hardware, firmware, and the ""DMTF SMBIOS"" standard."
+
+" (End of data from sysinfo program)"
+
+"Compiler Version Notes"
+
+==============================================================================
+" FC  503.bwaves_r(base) 549.fotonik3d_r(base) 554.roms_r(base)
+"
+------------------------------------------------------------------------------
+"Using built-in specs."
+COLLECT_GCC=/usr/bin/gfortran
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper
+OFFLOAD_TARGET_NAMES=nvptx-none:hsa
+OFFLOAD_TARGET_DEFAULT=1
+"Target: x86_64-linux-gnu"
+"Configured with: ../src/configure -v --with-pkgversion='Debian 9.2.1-28'"
+"  --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs"
+"  --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2"
+"  --prefix=/usr --with-gcc-major-version-only --program-suffix=-9"
+"  --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id"
+"  --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix"
+"  --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu"
+"  --enable-libstdcxx-debug --enable-libstdcxx-time=yes"
+"  --with-default-libstdcxx-abi=new --enable-gnu-unique-object"
+"  --disable-vtable-verify --enable-plugin --enable-default-pie"
+"  --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto"
+"  --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64"
+"  --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic"
+"  --enable-offload-targets=nvptx-none,hsa --without-cuda-driver"
+"  --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu"
+"  --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean"
+"  --enable-link-mutex"
+"Thread model: posix"
+"gcc version 9.2.1 20200203 (Debian 9.2.1-28) "
+------------------------------------------------------------------------------
+
+==============================================================================
+" CC  521.wrf_r(base) 527.cam4_r(base)
+"
+------------------------------------------------------------------------------
+"Using built-in specs."
+COLLECT_GCC=/usr/bin/gfortran
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper
+OFFLOAD_TARGET_NAMES=nvptx-none:hsa
+OFFLOAD_TARGET_DEFAULT=1
+"Target: x86_64-linux-gnu"
+"Configured with: ../src/configure -v --with-pkgversion='Debian 9.2.1-28'"
+"  --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs"
+"  --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2"
+"  --prefix=/usr --with-gcc-major-version-only --program-suffix=-9"
+"  --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id"
+"  --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix"
+"  --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu"
+"  --enable-libstdcxx-debug --enable-libstdcxx-time=yes"
+"  --with-default-libstdcxx-abi=new --enable-gnu-unique-object"
+"  --disable-vtable-verify --enable-plugin --enable-default-pie"
+"  --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto"
+"  --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64"
+"  --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic"
+"  --enable-offload-targets=nvptx-none,hsa --without-cuda-driver"
+"  --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu"
+"  --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean"
+"  --enable-link-mutex"
+"Thread model: posix"
+"gcc version 9.2.1 20200203 (Debian 9.2.1-28) "
+"clang version 8.0.1-7 (tags/RELEASE_801/final)"
+"Target: x86_64-pc-linux-gnu"
+"Thread model: posix"
+"InstalledDir: /usr/bin"
+"Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/10"
+"Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/8"
+"Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/9"
+"Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/10"
+"Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/8"
+"Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/9"
+"Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/9"
+"Candidate multilib: .;@m64"
+"Candidate multilib: 32;@m32"
+"Candidate multilib: x32;@mx32"
+"Selected multilib: .;@m64"
+------------------------------------------------------------------------------
+
+==============================================================================
+" CC  519.lbm_r(base) 538.imagick_r(base) 544.nab_r(base)
+"
+------------------------------------------------------------------------------
+"clang version 8.0.1-7 (tags/RELEASE_801/final)"
+"Target: x86_64-pc-linux-gnu"
+"Thread model: posix"
+"InstalledDir: /usr/bin"
+"Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/10"
+"Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/8"
+"Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/9"
+"Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/10"
+"Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/8"
+"Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/9"
+"Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/9"
+"Candidate multilib: .;@m64"
+"Candidate multilib: 32;@m32"
+"Candidate multilib: x32;@mx32"
+"Selected multilib: .;@m64"
+------------------------------------------------------------------------------
+
+==============================================================================
+" CXXC 508.namd_r(base) 510.parest_r(base)
+"
+------------------------------------------------------------------------------
+"clang version 8.0.1-7 (tags/RELEASE_801/final)"
+"Target: x86_64-pc-linux-gnu"
+"Thread model: posix"
+"InstalledDir: /usr/bin"
+"Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/10"
+"Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/8"
+"Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/9"
+"Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/10"
+"Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/8"
+"Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/9"
+"Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/9"
+"Candidate multilib: .;@m64"
+"Candidate multilib: 32;@m32"
+"Candidate multilib: x32;@mx32"
+"Selected multilib: .;@m64"
+------------------------------------------------------------------------------
+
+==============================================================================
+" CC  511.povray_r(base) 526.blender_r(base)
+"
+------------------------------------------------------------------------------
+"clang version 8.0.1-7 (tags/RELEASE_801/final)"
+"Target: x86_64-pc-linux-gnu"
+"Thread model: posix"
+"InstalledDir: /usr/bin"
+"Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/10"
+"Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/8"
+"Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/9"
+"Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/10"
+"Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/8"
+"Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/9"
+"Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/9"
+"Candidate multilib: .;@m64"
+"Candidate multilib: 32;@m32"
+"Candidate multilib: x32;@mx32"
+"Selected multilib: .;@m64"
+"clang version 8.0.1-7 (tags/RELEASE_801/final)"
+"Target: x86_64-pc-linux-gnu"
+"Thread model: posix"
+"InstalledDir: /usr/bin"
+"Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/10"
+"Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/8"
+"Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/9"
+"Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/10"
+"Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/8"
+"Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/9"
+"Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/9"
+"Candidate multilib: .;@m64"
+"Candidate multilib: 32;@m32"
+"Candidate multilib: x32;@mx32"
+"Selected multilib: .;@m64"
+------------------------------------------------------------------------------
+
+==============================================================================
+" FC  507.cactuBSSN_r(base)
+"
+------------------------------------------------------------------------------
+"clang version 8.0.1-7 (tags/RELEASE_801/final)"
+"Target: x86_64-pc-linux-gnu"
+"Thread model: posix"
+"InstalledDir: /usr/bin"
+"Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/10"
+"Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/8"
+"Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/9"
+"Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/10"
+"Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/8"
+"Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/9"
+"Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/9"
+"Candidate multilib: .;@m64"
+"Candidate multilib: 32;@m32"
+"Candidate multilib: x32;@mx32"
+"Selected multilib: .;@m64"
+"clang version 8.0.1-7 (tags/RELEASE_801/final)"
+"Target: x86_64-pc-linux-gnu"
+"Thread model: posix"
+"InstalledDir: /usr/bin"
+"Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/10"
+"Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/8"
+"Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/9"
+"Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/10"
+"Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/8"
+"Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/9"
+"Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/9"
+"Candidate multilib: .;@m64"
+"Candidate multilib: 32;@m32"
+"Candidate multilib: x32;@mx32"
+"Selected multilib: .;@m64"
+"Using built-in specs."
+COLLECT_GCC=/usr/bin/gfortran
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper
+OFFLOAD_TARGET_NAMES=nvptx-none:hsa
+OFFLOAD_TARGET_DEFAULT=1
+"Target: x86_64-linux-gnu"
+"Configured with: ../src/configure -v --with-pkgversion='Debian 9.2.1-28'"
+"  --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs"
+"  --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2"
+"  --prefix=/usr --with-gcc-major-version-only --program-suffix=-9"
+"  --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id"
+"  --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix"
+"  --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu"
+"  --enable-libstdcxx-debug --enable-libstdcxx-time=yes"
+"  --with-default-libstdcxx-abi=new --enable-gnu-unique-object"
+"  --disable-vtable-verify --enable-plugin --enable-default-pie"
+"  --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto"
+"  --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64"
+"  --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic"
+"  --enable-offload-targets=nvptx-none,hsa --without-cuda-driver"
+"  --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu"
+"  --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean"
+"  --enable-link-mutex"
+"Thread model: posix"
+"gcc version 9.2.1 20200203 (Debian 9.2.1-28) "
+------------------------------------------------------------------------------
+
+"Base Runtime Environment"
+503.bwaves_r," No flags used"
+507.cactuBSSN_r," No flags used"
+508.namd_r," No flags used"
+510.parest_r," No flags used"
+511.povray_r," No flags used"
+519.lbm_r," No flags used"
+521.wrf_r," No flags used"
+526.blender_r," No flags used"
+527.cam4_r," No flags used"
+538.imagick_r," No flags used"
+544.nab_r," No flags used"
+549.fotonik3d_r," No flags used"
+554.roms_r," No flags used"
+
+"Base Compiler Invocation"
+503.bwaves_r," gfortran"," gfortran"
+507.cactuBSSN_r," gfortran"
+508.namd_r," No flags used"
+510.parest_r," No flags used"
+511.povray_r," No flags used"
+519.lbm_r," No flags used"
+521.wrf_r," gfortran"," gfortran"
+526.blender_r," No flags used"
+527.cam4_r," gfortran"," gfortran"
+538.imagick_r," No flags used"
+544.nab_r," No flags used"
+549.fotonik3d_r," gfortran"," gfortran"
+554.roms_r," gfortran"," gfortran"
+
+"Base Portability Flags"
+503.bwaves_r," -DSPEC_LP64"
+507.cactuBSSN_r," -DSPEC_LP64"
+508.namd_r," -DSPEC_LP64"
+510.parest_r," -DSPEC_LP64"
+511.povray_r," -DSPEC_LP64"
+519.lbm_r," -DSPEC_LP64"
+521.wrf_r," -DSPEC_CASE_FLAG"," -fconvert=big-endian"," -DSPEC_LP64"
+526.blender_r," -funsigned-char"," -D__BOOL_DEFINED"," -DSPEC_LP64"
+527.cam4_r," -DSPEC_CASE_FLAG"," -DSPEC_LP64"
+538.imagick_r," -DSPEC_LP64"
+544.nab_r," -DSPEC_LP64"
+549.fotonik3d_r," -DSPEC_LP64"
+554.roms_r," -DSPEC_LP64"
+
+"Base Optimization Flags"
+503.bwaves_r," -m64"," -m64"," -g"," -O3"," -march=native"," -fno-unsafe-math-optimizations"
+507.cactuBSSN_r," -m64"," -m64"," -g"," -O3"," -march=native"," -fno-unsafe-math-optimizations"
+508.namd_r," -march=native"," -fno-unsafe-math-optimizations"
+510.parest_r," -march=native"," -fno-unsafe-math-optimizations"
+511.povray_r," -march=native"," -fno-unsafe-math-optimizations"
+519.lbm_r," -march=native"," -fno-unsafe-math-optimizations"
+521.wrf_r," -m64"," -m64"," -m64"," -g"," -O3"," -march=native"," -fno-unsafe-math-optimizations"
+526.blender_r," -march=native"," -fno-unsafe-math-optimizations"
+527.cam4_r," -m64"," -m64"," -m64"," -g"," -O3"," -march=native"," -fno-unsafe-math-optimizations"
+538.imagick_r," -march=native"," -fno-unsafe-math-optimizations"
+544.nab_r," -march=native"," -fno-unsafe-math-optimizations"
+549.fotonik3d_r," -m64"," -m64"," -g"," -O3"," -march=native"," -fno-unsafe-math-optimizations"
+554.roms_r," -m64"," -m64"," -g"," -O3"," -march=native"," -fno-unsafe-math-optimizations"
+
+"Base Other Flags"
+503.bwaves_r," No flags used"
+507.cactuBSSN_r," No flags used"
+508.namd_r," No flags used"
+510.parest_r," No flags used"
+511.povray_r," No flags used"
+519.lbm_r," No flags used"
+521.wrf_r," No flags used"
+526.blender_r," No flags used"
+527.cam4_r," No flags used"
+538.imagick_r," No flags used"
+544.nab_r," No flags used"
+549.fotonik3d_r," No flags used"
+554.roms_r," No flags used"
+
+"Base Forbidden Flags"
+503.bwaves_r
+507.cactuBSSN_r
+508.namd_r
+510.parest_r
+511.povray_r
+519.lbm_r
+521.wrf_r
+526.blender_r
+527.cam4_r
+538.imagick_r
+544.nab_r
+549.fotonik3d_r
+554.roms_r
+
+"Base Unknown Flags"
+503.bwaves_r," -fPIC"," -fPIC"
+507.cactuBSSN_r," /usr/bin/clang++ -std=c++03 -m64"," /usr/bin/clang -m64"," /usr/bin/clang++ -std=c++03"," -g -fPIC -O3"," -g -fPIC -O3"," -fPIC"," -fPIC"
+508.namd_r," /usr/bin/clang++ -std=c++03 -m64"," /usr/bin/clang++ -std=c++03 -m64"," -g -fPIC -O3"," -g -fPIC -O3"
+510.parest_r," /usr/bin/clang++ -std=c++03 -m64"," /usr/bin/clang++ -std=c++03 -m64"," -g -fPIC -O3"," -g -fPIC -O3"
+511.povray_r," /usr/bin/clang++ -std=c++03 -m64"," /usr/bin/clang -m64"," /usr/bin/clang++ -std=c++03 -m64"," /usr/bin/clang++ -std=c++03 -m64"," /usr/bin/clang -m64"," /usr/bin/clang++ -std=c++03 -m64"," -g -fPIC -O3"," -g -fPIC -O3"," -g -fPIC -O3"," -g -fPIC -O3"," -g -fPIC -O3"," -g -fPIC -O3"
+519.lbm_r," /usr/bin/clang -m64"," /usr/bin/clang -m64"," -g -fPIC -O3"," -g -fPIC -O3"
+521.wrf_r," /usr/bin/clang"," /usr/bin/clang"," -fPIC"," -fPIC"," -fPIC"," -fPIC"," -fPIC"," -fPIC"
+526.blender_r," /usr/bin/clang++ -std=c++03 -m64"," /usr/bin/clang -m64"," /usr/bin/clang++ -std=c++03 -m64"," /usr/bin/clang++ -std=c++03 -m64"," /usr/bin/clang -m64"," /usr/bin/clang++ -std=c++03 -m64"," -g -fPIC -O3"," -g -fPIC -O3"," -g -fPIC -O3"," -g -fPIC -O3"," -g -fPIC -O3"," -g -fPIC -O3"
+527.cam4_r," /usr/bin/clang"," /usr/bin/clang"," -fPIC"," -fPIC"," -fPIC"," -fPIC"," -fPIC"," -fPIC"
+538.imagick_r," /usr/bin/clang -m64"," /usr/bin/clang -m64"," /usr/bin/clang -m64"," /usr/bin/clang -m64"," -g -fPIC -O3"," -g -fPIC -O3"," -g -fPIC -O3"," -g -fPIC -O3"
+544.nab_r," /usr/bin/clang -m64"," /usr/bin/clang -m64"," -g -fPIC -O3"," -g -fPIC -O3"
+549.fotonik3d_r," -fPIC"," -fPIC"
+554.roms_r," -fPIC"," -fPIC"
+
+"Peak Runtime Environment"
+503.bwaves_r
+507.cactuBSSN_r
+508.namd_r
+510.parest_r
+511.povray_r
+519.lbm_r
+521.wrf_r
+526.blender_r
+527.cam4_r
+538.imagick_r
+544.nab_r
+549.fotonik3d_r
+554.roms_r
+
+"Peak Compiler Invocation"
+503.bwaves_r
+507.cactuBSSN_r
+508.namd_r
+510.parest_r
+511.povray_r
+519.lbm_r
+521.wrf_r
+526.blender_r
+527.cam4_r
+538.imagick_r
+544.nab_r
+549.fotonik3d_r
+554.roms_r
+
+"Peak Portability Flags"
+503.bwaves_r
+507.cactuBSSN_r
+508.namd_r
+510.parest_r
+511.povray_r
+519.lbm_r
+521.wrf_r
+526.blender_r
+527.cam4_r
+538.imagick_r
+544.nab_r
+549.fotonik3d_r
+554.roms_r
+
+"Peak Optimization Flags"
+503.bwaves_r
+507.cactuBSSN_r
+508.namd_r
+510.parest_r
+511.povray_r
+519.lbm_r
+521.wrf_r
+526.blender_r
+527.cam4_r
+538.imagick_r
+544.nab_r
+549.fotonik3d_r
+554.roms_r
+
+"Peak Other Flags"
+503.bwaves_r
+507.cactuBSSN_r
+508.namd_r
+510.parest_r
+511.povray_r
+519.lbm_r
+521.wrf_r
+526.blender_r
+527.cam4_r
+538.imagick_r
+544.nab_r
+549.fotonik3d_r
+554.roms_r
+
+"Peak Forbidden Flags"
+503.bwaves_r
+507.cactuBSSN_r
+508.namd_r
+510.parest_r
+511.povray_r
+519.lbm_r
+521.wrf_r
+526.blender_r
+527.cam4_r
+538.imagick_r
+544.nab_r
+549.fotonik3d_r
+554.roms_r
+
+"Peak Unknown Flags"
+503.bwaves_r
+507.cactuBSSN_r
+508.namd_r
+510.parest_r
+511.povray_r
+519.lbm_r
+521.wrf_r
+526.blender_r
+527.cam4_r
+538.imagick_r
+544.nab_r
+549.fotonik3d_r
+554.roms_r
+
+ERRORS
+
+##############################################################################
+"#   INVALID RUN INVALID RUN INVALID RUN INVALID RUN INVALID RUN INVALID RUN  #"
+"#                                                                            #"
+"# 'reportable' flag not set during run                                       #"
+"# 507.cactuBSSN_r (base) did not have enough runs!                           #"
+"# 508.namd_r (base) did not have enough runs!                                #"
+"# 526.blender_r (base) did not have enough runs!                             #"
+"# 554.roms_r (base) did not have enough runs!                                #"
+"# 527.cam4_r (base) did not have enough runs!                                #"
+"# 511.povray_r (base) did not have enough runs!                              #"
+"# 519.lbm_r (base) did not have enough runs!                                 #"
+"# 544.nab_r (base) did not have enough runs!                                 #"
+"# 521.wrf_r (base) did not have enough runs!                                 #"
+"# 510.parest_r (base) did not have enough runs!                              #"
+"# 538.imagick_r (base) did not have enough runs!                             #"
+"# 503.bwaves_r (base) did not have enough runs!                              #"
+"# 549.fotonik3d_r (base) did not have enough runs!                           #"
+"# Unknown flags were used! See                                               #"
+"#      https://www.spec.org/cpu2017/Docs/runcpu.html#flagsurl                #"
+"# for information about how to get rid of this error.                        #"
+"#                                                                            #"
+"#   INVALID RUN INVALID RUN INVALID RUN INVALID RUN INVALID RUN INVALID RUN  #"
+##############################################################################
+----------------
+"For questions about","this result, please","contact the tester.",
+"For other inquiries,","please contact",info@spec.org.,
+"Copyright 2017-2020 Standard","Performance Evaluation",Corporation,
+"Tested with SPEC CPU2017",v1.0.5.
+"Result run on","2020-02-28 15:55:32+0530."
+"Report generated on","2020-02-28 17:24:44","by SPEC CPU2017 CSV","formatter v5178."
