@@ -1,0 +1,7 @@
+1) When the user program does the ioctl call for the kernel module service, device_ioctl (in main.c) is called.
+
+2) IMPLEMENT register_syscall
+
+3) IMPLEMENT unregister_syscall
+
+4) IMPLEMENT syscall_handler
